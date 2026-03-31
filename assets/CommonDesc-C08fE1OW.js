@@ -1,1 +1,0 @@
-import{j as a,A as e,c as t}from"./index-CH8wS3hI.js";const n=({children:s,className:o,color:r="warning"})=>a.jsx(e,{color:r,isLight:!0,shadow:"md",borderWidth:0,icon:"Info",className:t("flex-nowrap","w-100","mb-0",o),children:s});export{n as C};
