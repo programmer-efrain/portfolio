@@ -1,0 +1,1 @@
+import{j as e}from"./index-CH8wS3hI.js";const a=({to:t,children:r,...o})=>e.jsx("a",{href:`https://facit-story.omtanke.studio/?path=${t}`,target:"_blank",rel:"noreferrer",...o,children:r});export{a as C};

@@ -1,0 +1,1 @@
+import{j as r,B as s}from"./index-CH8wS3hI.js";const n=({to:t,...o})=>r.jsx(s,{color:"storybook",icon:"CustomStorybook",tag:"a",target:"_blank",isLight:!0,href:`https://facit-story.omtanke.studio/?path=${t}`,...o,children:"Storybook"});export{n as C};
