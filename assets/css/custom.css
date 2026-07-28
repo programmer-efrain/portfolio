@@ -1,0 +1,29 @@
+/*
+MENU
+*/
+.main-menu__nav ul li.active a {
+    color: #f24805;
+}
+
+.main-menu__nav ul li.active > a::before {
+    --scale: 1;
+    background: #f24805; /* #0554f2 */
+    background-color: rgb(242, 94, 5); /* rgb(5, 84, 242) */
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-origin: padding-box;
+    background-image: none;
+    background-size: auto;
+    background-clip: border-box;
+}
+
+.services .timeline-item .timeline-content,
+.services .timeline-item--right {
+    padding: 0px !important;
+}
+
+.list-line .list ul li {
+    width: auto !important;
+}

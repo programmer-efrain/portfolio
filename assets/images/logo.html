@@ -1,0 +1,83 @@
+<canvas id="mainLogo"></canvas>
+<script>
+    const canvas = document.getElementById("mainLogo");
+    canvas.width = 167;
+    canvas.height = 38;
+    let showCursor = true;
+
+    const ctx = canvas.getContext("2d");
+
+    // Aseguramos que el fondo sea transparente (sin dibujar un fondo)
+    canvas.style.backgroundColor = "transparent";
+
+  function createCursor() {
+    // Fondo del banner
+    ctx.fillStyle = "#ffffff"; 
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+    // Texto del banner
+    ctx.font = "bold 23px monospace";
+    /*
+    Console
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    */
+    ctx.fillStyle = "#fca46d";
+    ctx.fillText("$DEVELOPER", 5, 25);
+  
+    if (showCursor) {
+     ctx.fillRect( ctx.measureText("$DEVELOPER").width + 5, 10, 12, 17);
+    } else {
+      ctx.fillRect( ctx.measureText("$DEVELOPER").width + 5, 23, 12, 3);
+    }
+  }
+
+  function toggleCursor() {
+    showCursor = !showCursor;
+    createCursor();
+  }
+
+  setInterval(toggleCursor, 500);
+  createCursor();
+
+  </script>
+
+
+<!-- 
+<canvas id="terminalCanvas"></canvas>
+-->
+<!--
+<script>
+    /*
+  const canvas = document.getElementById("terminalCanvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = 200;
+
+  const command = "echo 'Hola, mundo!'";
+  let showCursor = true;
+  
+  function drawTerminal() {
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    ctx.fillStyle = "lime";
+    ctx.font = "20px monospace";
+    ctx.fillText(command, 20, 100);
+
+    if (showCursor) {
+      ctx.fillRect(20 + ctx.measureText(command).width + 5, 85, 10, 20);
+    }
+  }
+
+  function toggleCursor() {
+    showCursor = !showCursor;
+    drawTerminal();
+  }
+
+  setInterval(toggleCursor, 500);
+  drawTerminal();
+  */
+</script>
+-->
